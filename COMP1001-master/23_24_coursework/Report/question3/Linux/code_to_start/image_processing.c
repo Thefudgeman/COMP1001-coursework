@@ -27,9 +27,9 @@ void openfile(char *filename, FILE** finput);
 int getint(FILE *fp);
 
 //CRITICAL POINT: images' paths - You need to change these paths
-#define IN "/home/wave/Desktop/comp1001/code_to_start/input_images/a15.pgm"
-#define OUT "/home/wave/Desktop/comp1001/code_to_start/output_images/blurred.pgm"
-#define OUT2 "/home/wave/Desktop/comp1001/code_to_start/output_images/edge_detection.pgm"
+#define IN "/code_to_start/input_images/a15.pgm"
+#define OUT "/code_to_start/code_to_start/output_images/blurred.pgm"
+#define OUT2 "/code_to_start/code_to_start/output_images/edge_detection.pgm"
 
 //IMAGE DIMENSIONS
 #define M 475 //cols
@@ -65,7 +65,7 @@ const signed char GyMask[3][3] = {
 char header[100];
 
 
-int main( ){
+int main(int argc, char *argv[] ){
 
 	
  read_image(IN);//read image from disc
@@ -84,7 +84,7 @@ int main( ){
 
 
 
-void Gaussian_Blur( ){
+void Gaussian_Blur(){
 
 	int row,col,rowOffset,colOffset;
 	int newPixel;
@@ -228,7 +228,7 @@ void write_image2(char* filename, unsigned char * output_image)
 
 void openfile(char *filename, FILE** finput)
 {
-  int x0, y0,x;
+  int x0, y0, x;
 
 //int aa;
 
