@@ -5,7 +5,7 @@
 ------------------UNIVERSITY OF PLYMOUTH, SCHOOL OF ENGINEERING, COMPUTING AND MATHEMATICS---
 */
 
-//In Linux compile using : gcc image_processing.c   -o p -O3  -lm  
+//In Linux compile using : gcc image_processing.c   -o p -O3  -lm   
 
 #include <stdio.h>
 #include <string.h>
